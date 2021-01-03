@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Text, SafeAreaView, StyleSheet, Image, ActivityIndicator, Dimensions, View, ScrollView } from "react-native";
-import { FlatList } from 'react-native-gesture-handler';
 
 class Detail extends Component {
     constructor(props) {
@@ -42,7 +41,6 @@ class Detail extends Component {
                         <View style={styles.content}>
                             <Text style={styles.title}>{data.judul.trim()}</Text>
                             <Image style={styles.image} source={{uri: data.poster}}/>
-                            <Text style={styles.text}>{data.body.trim().replace(/(\n)/gm,"\n\n\n\n\n").replace(/(\n\n\n|\r|\t)/gm, "")}</Text>
                             {data.body
                                 .trim()
                                 .replace(/(\r\n|\r|\n)+/g, "ENTER ")

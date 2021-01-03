@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
     },
     logo :{
         width : 200,
-        height : 200
+        height : 200,
+        borderRadius: 10
 
     },
     tagline : {
@@ -33,6 +34,7 @@ const styles = StyleSheet.create({
     },
     button : {
         width : 250,
+        borderRadius: 10
 
     }
 })
